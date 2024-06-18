@@ -10,12 +10,35 @@ meuFormulario.addEventListener("submit", function(event) {
   function verificarVogal() {
 
     var  letra = document.getElementById("insira_uma_letra").value.toLowerCase();
-    
-    if  (letra.length === 1 && /[aeiou]/.test(letra)) {
+
+
+
+    switch (letra) {
+        case "a": document.getElementById("resultado").value = "É uma vogal";
+        break;
+        case "e": document.getElementById("resultado").value = "É uma vogal";
+        break;
+        case "i": document.getElementById("resultado").value = "É uma vogal";
+        break;
+        case "o": document.getElementById("resultado").value = "É uma vogal";
+        break;
+        case "u": document.getElementById("resultado").value = "É uma vogal";
+        break
+        default:
+    }
+
+
+
+
+
+    /*
+    if  (letra  == /[aeiou]/.test(letra)) {
+
       document.getElementById("resultado").innerText = "É uma vogal";
     }else{
       document.getElementById("resultado").innerText = "Não é uma vogal";
     }
+    */
 
 }
 
